@@ -8,6 +8,7 @@
 
 html {
   scroll-behavior: smooth;
+  /* transition: all 0.5s ; */
 }
 
 a {
@@ -21,7 +22,7 @@ a {
   height: 100vh;
   height: 700px;
   overflow: hidden;
-  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.474)), url(./images/website_crouserl2.jpg) no-repeat;
+  background: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(106, 104, 245, 0.23)), url(./images/website_crouserl2.jpg) no-repeat;
   position: relative;
   background-size: cover;
 }
@@ -43,7 +44,7 @@ a {
   font-size: 45px;
   font-weight: bold;
   line-height: 80px;
-  color: #0f100f;
+  color: #f3f9fa;
   padding: 0 80px;
 }
 
@@ -203,7 +204,9 @@ a {
     font-size: 55px;
     margin-bottom: 0;
   } 
-
+  .navbar .logo a{
+    padding: 0 20px;
+  }
 }
 /* Header */
 
@@ -390,7 +393,7 @@ h2 {
 
 @media only screen and (max-width:590px) {
   .port_block {
-    width: 40%;
+    width: 80%;
   }
 }
 
@@ -660,13 +663,19 @@ hr {
     padding: 10px;
   }
 .team_item{
-width: 80%;
+width: 45%;
 }
 .foto{
   /* width: auto; */
 }
 }
 
+@media only screen and (max-width:590px){
+  .team_item{
+
+    width: 80%;
+  }
+}
 
 /* Team */
 
@@ -711,9 +720,9 @@ width: 80%;
   margin-bottom: 27px;
 }
 
-#message {
+.messagebox {
   display: inline-block;
-  width: 455px;
+  width: 300px;
   height: 213px;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
@@ -731,21 +740,15 @@ width: 80%;
   padding: 10px;
 }
 @media only screen and (max-width:920) {
-  #message{
+ .messagebox{
    width: auto;
   }
 }
-
 @media only screen and  (max-width:590px) {
   .input_fields input{
     width: auto;
   }
-  #message{
-    width: 300px;
-    margin-top: 0;
-    margin-bottom: 10px;
-    margin-left: -20px;
-  }
+ 
 }
 
 /* Contact us*/
