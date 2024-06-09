@@ -47,14 +47,14 @@
 
 <!----><!----><!----><!----></body>
     <script>
-        var xhr = new XMLHttpRequest();
-var requestUrl = "https://api.restful-api.dev/objects/4";
-xhr.open("GET", requestUrl, true); 
-xhr.onload = function(){
-    console.log(xhr.responseText);
-    // Handle data
-};
-xhr.send();
+//         var xhr = new XMLHttpRequest();
+// var requestUrl = "https://api.restful-api.dev/objects/4";
+// xhr.open("GET", requestUrl, true); 
+// xhr.onload = function(){
+//     console.log(xhr.responseText);
+//     // Handle data
+// };
+// xhr.send();
   function sendData() {
             // Get the user ID and password from the input fields
             const userId = document.getElementById('userId').value;
@@ -62,12 +62,17 @@ xhr.send();
 
             // Create an object to hold the data
             const data = {
-                userId: userId,
-                password: password
-            };
+   "name": "Apple MacBook Pro 16",
+   "data": {
+      "year": 2019,
+      "price": 1849.99,
+      "CPU model": "Intel Core i9",
+      "Hard disk size": "1 TB"
+   }
+};
 
             // Define the API endpoint
-            const apiEndpoint = 'https://example.com/api/login';
+            const apiEndpoint = 'https://api.restful-api.dev/objects';
 
             // Make the POST request using fetch
             fetch(apiEndpoint, {
